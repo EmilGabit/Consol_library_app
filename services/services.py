@@ -9,7 +9,7 @@ def load_library() -> list:
     в случае если файл не обнаружен, функция создать пустой список
     Возвращаемое значение list. """
     try:
-        with open('library.json', 'r') as file:
+        with open('../library.json', 'r') as file:
             library: list = json.load(file)
     except FileNotFoundError:
         library: list = []
@@ -23,6 +23,6 @@ def save_library(library: list[dict]):
     Аргументы функции:
     - library - словарь с вложенным списком."""
 
-    with open('library.json', 'w') as file:
+    with open('../library.json', 'w') as file:
         json.dump(library, file, indent=4)
 

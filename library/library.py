@@ -1,5 +1,5 @@
-from services import load_library, save_library
-from lexicon import LEXICON
+from services.services import load_library, save_library
+from lexicon.lexicon import LEXICON
 
 class Library:
     """Класс Библиотека

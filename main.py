@@ -1,6 +1,6 @@
 """Основной модуль данного приложения, запуск программы начнется именно с этого модуля."""
-from library import Library
-from lexicon import LEXICON
+from library.library import Library
+from lexicon.lexicon import LEXICON
 
 # Main function to manage the library
 def main():
